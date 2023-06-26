@@ -3,11 +3,13 @@
     "version": "1.0.0",
     "description": "Extension for ESP32",
     "dependencies": {
-        "core": "*"
+        "core": "*",
+        "radio": "*",
+        "microphone": "*"
     },
     "files": [
         "README.md",
-        "main.ts",
+        "Esp32.ts",
         "fecha.ts"
         
     ],
