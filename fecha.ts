@@ -6,7 +6,7 @@
  * Email:   support@cytron.io
  *******************************************************************************/
 
- namespace esp32 {
+ namespace Esp32 {
     // Flag to indicate whether the SNTP time is initialized.
     let internetTimeInitialized = false
 

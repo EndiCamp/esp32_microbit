@@ -10,7 +10,7 @@
  * Blocks for esp32 WiFi module.
  */
 //% weight=10 color=#ff8000 icon="\uf1eb" block="Esp32 WiFi"
-namespace esp32 {
+namespace Esp32 {
     // Flag to indicate whether the esp32 was initialized successfully.
     let esp32Initialized = false
 
