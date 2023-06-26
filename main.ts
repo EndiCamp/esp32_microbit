@@ -89,16 +89,17 @@ namespace Esp32 {
      */
     //% blockHidden=true
     //% blockId=esp32_get_response
-    export function getResponse(response: string, timeout: number = 100): string {
+    export function getResponse(response: string, timeout: number = 200): string {
         let responseLine = ""
         let timestamp = input.runningTime()
         while (true) {
             // Timeout.
-            if (inpuT.runningTime() - timestamp > timeout) {
+            if (input.runningTime() - timestamp > timeout) {
                 // Check if expected response received in case no CRLF received.
                 if (rxData.includes(response)) {
                     responseLine = rxData
                 }
+                
                 break
             }
 
@@ -168,7 +169,7 @@ namespace Esp32 {
     }
 
 
-    
+
     /**
      * Return true if the esp32 is already initialized.
      */
@@ -209,10 +210,17 @@ namespace Esp32 {
         esp32Initialized = false
 
         // Restore the esp32 factory settings.
-        if (sendCommand("AT+RESTORE", "ready", 5000) == false) return
+        if (sendCommand("AT+RESTORE", "ready", 5000) == false) {
+            esp32Initialized = false
+            return
+            }
 
         // Turn off echo.
-        if (sendCommand("ATE0", "OK") == false) return
+        if (sendCommand("ATE0", "OK") == false) {
+            esp32Initialized = false
+            return
+        }
+
 
         // Initialized successfully.
         // Set the flag.

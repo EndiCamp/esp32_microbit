@@ -39,7 +39,7 @@
     //% blockId=esp32_get_month
     //% block="month"
     export function getMonth(): number {
-        return montH
+        return month
     }
 
     /**
@@ -128,7 +128,7 @@
     //% blockId=esp32_init_internet_time
     //% block="initialize internet time at timezone %timezone ntp pool %ntp "
     //% timezone.min=-11 timezone.max=13
-    export function initInternetTime(timezone: number, ntp: string ) {
+    export function initInternetTime(timezone: number, ntp: string) {
         // Reset the flags.
         internetTimeInitialized = false
         internetTimeUpdated = false
