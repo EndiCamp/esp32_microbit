@@ -7,12 +7,13 @@
     },
     "files": [
         "README.md",
-        "main.ts"
+        "main.ts",
+        "fecha.ts"
         
     ],
     "testFiles": [
         "test.ts"
     ],
-    "public": false,
+    "public": true,
     "license": "MIT"
 }
