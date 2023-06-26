@@ -1,16 +1,14 @@
 {
-    "name": "OmniBit",
-    "version": "1.0.5",
-    "description": "Extension for YahBoom OmniBit V1.0.5",
+    "name": "Esp32",
+    "version": "1.0.0",
+    "description": "Extension for ESP32",
     "dependencies": {
-        "core": "*",
-        "neopixel": "github:lzty634158/pxt-neopixel"
+        "core": "*"
     },
     "files": [
         "README.md",
         "main.ts",
-        "_locales/zh-cn/OmniBit-strings.json",
-        "_locales/zh-tw/OmniBit-strings.json"
+        
     ],
     "testFiles": [
         "test.ts"
