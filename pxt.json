@@ -9,9 +9,8 @@
     },
     "files": [
         "README.md",
-        "Esp32.ts",
-        "fecha.ts",
-        "thinkspeak.ts"
+        "Esp32.ts"
+        
         
     ],
     "testFiles": [
