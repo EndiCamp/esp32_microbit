@@ -127,6 +127,7 @@
     //% blockGap=40
     //% blockId=esp32_init_internet_time
     //% block="initialize internet time at timezone %timezone ntp pool %ntp "
+    //% ntp.defl=0.europe.pool.ntp.org
     //% timezone.min=-11 timezone.max=13
     export function initInternetTime(timezone: number, ntp: string) {
         // Reset the flags.
