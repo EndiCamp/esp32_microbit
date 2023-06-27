@@ -10,7 +10,8 @@
     "files": [
         "README.md",
         "Esp32.ts",
-        "fecha.ts"
+        "fecha.ts",
+        "thinspeak.ts"
         
     ],
     "testFiles": [
