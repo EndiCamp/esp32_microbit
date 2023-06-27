@@ -11,7 +11,7 @@
         "README.md",
         "Esp32.ts",
         "fecha.ts",
-        "thinspeak.ts"
+        "thinkspeak.ts"
         
     ],
     "testFiles": [
